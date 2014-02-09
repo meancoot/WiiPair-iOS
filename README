@@ -1,0 +1,25 @@
+Quick iOS app to pair a Wii Remote with BTstack.
+
+After pairing you can press any button on the WiiMote and it will seek out a
+connection with the iOS device.
+
+The BTstack flow for accepting such a connection is:
+--> Register L2CAP services for PSM_HID_INTERRUPT and PSM_HID_CONTROL
+
+<-- HCI_EVENT_CONNECTION_COMPLETE
+--> hci_switch_role_command (Switch to master)
+--- The hci_switch_role_command here is imperative, without it
+    the WiiMote will disconnect almost immediately.
+
+--- For both the INTERRUPT and CONTROL channels
+<-- L2CAP_EVENT_INCOMING_CONNECTION
+--> l2cap_accept_connection
+<-- L2CAP_EVENT_CHANNEL_OPENED
+--- Connection is now established.
+
+This exact flow of events can be used to establish connections to
+SixAxis and DualShock 3 pads as well.
+
+By allowing the removal of Bluetooth inquiry code, and reuse between PS3 pads,
+using pairing can greatly simplify BTstack related input code.
+

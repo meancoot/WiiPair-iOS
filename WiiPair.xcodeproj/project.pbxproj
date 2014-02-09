@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9628EB4118A6FA2200B56E7D /* btstack_queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 96B20B8418A6640A00F9481B /* btstack_queue.c */; };
+		9628EB4318A6FA3500B56E7D /* WIIPairViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B20B7B18A662C000F9481B /* WIIPairViewController.m */; };
+		9628EB4618A708E500B56E7D /* WIIMainViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9628EB4518A708E500B56E7D /* WIIMainViewViewController.m */; };
+		96B20B4618A5C4C300F9481B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B20B4518A5C4C300F9481B /* Foundation.framework */; };
+		96B20B4818A5C4C300F9481B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B20B4718A5C4C300F9481B /* CoreGraphics.framework */; };
+		96B20B4A18A5C4C300F9481B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B20B4918A5C4C300F9481B /* UIKit.framework */; };
+		96B20B5018A5C4C300F9481B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96B20B4E18A5C4C300F9481B /* InfoPlist.strings */; };
+		96B20B5218A5C4C300F9481B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B20B5118A5C4C300F9481B /* main.m */; };
+		96B20B5618A5C4C300F9481B /* WIIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B20B5518A5C4C300F9481B /* WIIAppDelegate.m */; };
+		96B20B7918A6609000F9481B /* WIILogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B20B7818A6609000F9481B /* WIILogViewController.m */; };
+		96B20B8818A6646000F9481B /* libBTstack.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B20B8718A6646000F9481B /* libBTstack.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9628EB4418A708E500B56E7D /* WIIMainViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIIMainViewViewController.h; sourceTree = "<group>"; };
+		9628EB4518A708E500B56E7D /* WIIMainViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIIMainViewViewController.m; sourceTree = "<group>"; };
+		96B20B4218A5C4C300F9481B /* WiiPair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiiPair.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96B20B4518A5C4C300F9481B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96B20B4718A5C4C300F9481B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		96B20B4918A5C4C300F9481B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		96B20B4D18A5C4C300F9481B /* WiiPair-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WiiPair-Info.plist"; sourceTree = "<group>"; };
+		96B20B4F18A5C4C300F9481B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96B20B5118A5C4C300F9481B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96B20B5318A5C4C300F9481B /* WiiPair-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WiiPair-Prefix.pch"; sourceTree = "<group>"; };
+		96B20B5418A5C4C300F9481B /* WIIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WIIAppDelegate.h; sourceTree = "<group>"; };
+		96B20B5518A5C4C300F9481B /* WIIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WIIAppDelegate.m; sourceTree = "<group>"; };
+		96B20B7718A6609000F9481B /* WIILogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIILogViewController.h; sourceTree = "<group>"; };
+		96B20B7818A6609000F9481B /* WIILogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIILogViewController.m; sourceTree = "<group>"; };
+		96B20B7A18A662C000F9481B /* WIIPairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIIPairViewController.h; sourceTree = "<group>"; };
+		96B20B7B18A662C000F9481B /* WIIPairViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIIPairViewController.m; sourceTree = "<group>"; };
+		96B20B7E18A6640A00F9481B /* btstack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btstack.h; sourceTree = "<group>"; };
+		96B20B7F18A6640A00F9481B /* hci_cmds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hci_cmds.h; sourceTree = "<group>"; };
+		96B20B8018A6640A00F9481B /* linked_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linked_list.h; sourceTree = "<group>"; };
+		96B20B8118A6640A00F9481B /* run_loop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = run_loop.h; sourceTree = "<group>"; };
+		96B20B8218A6640A00F9481B /* sdp_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdp_util.h; sourceTree = "<group>"; };
+		96B20B8318A6640A00F9481B /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		96B20B8418A6640A00F9481B /* btstack_queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = btstack_queue.c; sourceTree = "<group>"; };
+		96B20B8518A6640A00F9481B /* btstack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btstack.h; sourceTree = "<group>"; };
+		96B20B8718A6646000F9481B /* libBTstack.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libBTstack.dylib; path = WiiPair/libBTstack.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96B20B3F18A5C4C300F9481B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B20B4818A5C4C300F9481B /* CoreGraphics.framework in Frameworks */,
+				96B20B8818A6646000F9481B /* libBTstack.dylib in Frameworks */,
+				96B20B4A18A5C4C300F9481B /* UIKit.framework in Frameworks */,
+				96B20B4618A5C4C300F9481B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96B20B3918A5C4C300F9481B = {
+			isa = PBXGroup;
+			children = (
+				96B20B8718A6646000F9481B /* libBTstack.dylib */,
+				96B20B4B18A5C4C300F9481B /* WiiPair */,
+				96B20B4418A5C4C300F9481B /* Frameworks */,
+				96B20B4318A5C4C300F9481B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96B20B4318A5C4C300F9481B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96B20B4218A5C4C300F9481B /* WiiPair.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96B20B4418A5C4C300F9481B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96B20B4518A5C4C300F9481B /* Foundation.framework */,
+				96B20B4718A5C4C300F9481B /* CoreGraphics.framework */,
+				96B20B4918A5C4C300F9481B /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96B20B4B18A5C4C300F9481B /* WiiPair */ = {
+			isa = PBXGroup;
+			children = (
+				96B20B7D18A6640A00F9481B /* btstack */,
+				96B20B8418A6640A00F9481B /* btstack_queue.c */,
+				96B20B8518A6640A00F9481B /* btstack.h */,
+				96B20B5418A5C4C300F9481B /* WIIAppDelegate.h */,
+				96B20B5518A5C4C300F9481B /* WIIAppDelegate.m */,
+				96B20B7718A6609000F9481B /* WIILogViewController.h */,
+				96B20B7818A6609000F9481B /* WIILogViewController.m */,
+				9628EB4418A708E500B56E7D /* WIIMainViewViewController.h */,
+				9628EB4518A708E500B56E7D /* WIIMainViewViewController.m */,
+				96B20B7A18A662C000F9481B /* WIIPairViewController.h */,
+				96B20B7B18A662C000F9481B /* WIIPairViewController.m */,
+				96B20B4C18A5C4C300F9481B /* Supporting Files */,
+			);
+			path = WiiPair;
+			sourceTree = "<group>";
+		};
+		96B20B4C18A5C4C300F9481B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96B20B4D18A5C4C300F9481B /* WiiPair-Info.plist */,
+				96B20B4E18A5C4C300F9481B /* InfoPlist.strings */,
+				96B20B5118A5C4C300F9481B /* main.m */,
+				96B20B5318A5C4C300F9481B /* WiiPair-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96B20B7D18A6640A00F9481B /* btstack */ = {
+			isa = PBXGroup;
+			children = (
+				96B20B7E18A6640A00F9481B /* btstack.h */,
+				96B20B7F18A6640A00F9481B /* hci_cmds.h */,
+				96B20B8018A6640A00F9481B /* linked_list.h */,
+				96B20B8118A6640A00F9481B /* run_loop.h */,
+				96B20B8218A6640A00F9481B /* sdp_util.h */,
+				96B20B8318A6640A00F9481B /* utils.h */,
+			);
+			path = btstack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96B20B4118A5C4C300F9481B /* WiiPair */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96B20B6E18A5C4C300F9481B /* Build configuration list for PBXNativeTarget "WiiPair" */;
+			buildPhases = (
+				96B20B3E18A5C4C300F9481B /* Sources */,
+				96B20B3F18A5C4C300F9481B /* Frameworks */,
+				96B20B4018A5C4C300F9481B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiiPair;
+			productName = WiiPair;
+			productReference = 96B20B4218A5C4C300F9481B /* WiiPair.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96B20B3A18A5C4C300F9481B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WII;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = WiiPair;
+			};
+			buildConfigurationList = 96B20B3D18A5C4C300F9481B /* Build configuration list for PBXProject "WiiPair" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 96B20B3918A5C4C300F9481B;
+			productRefGroup = 96B20B4318A5C4C300F9481B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96B20B4118A5C4C300F9481B /* WiiPair */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96B20B4018A5C4C300F9481B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B20B5018A5C4C300F9481B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96B20B3E18A5C4C300F9481B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9628EB4618A708E500B56E7D /* WIIMainViewViewController.m in Sources */,
+				9628EB4118A6FA2200B56E7D /* btstack_queue.c in Sources */,
+				96B20B5618A5C4C300F9481B /* WIIAppDelegate.m in Sources */,
+				96B20B7918A6609000F9481B /* WIILogViewController.m in Sources */,
+				9628EB4318A6FA3500B56E7D /* WIIPairViewController.m in Sources */,
+				96B20B5218A5C4C300F9481B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96B20B4E18A5C4C300F9481B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96B20B4F18A5C4C300F9481B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96B20B6C18A5C4C300F9481B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96B20B6D18A5C4C300F9481B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96B20B6F18A5C4C300F9481B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiiPair/WiiPair-Prefix.pch";
+				INFOPLIST_FILE = "WiiPair/WiiPair-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jason/Documents/Projects/WiiPair/WiiPair,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		96B20B7018A5C4C300F9481B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiiPair/WiiPair-Prefix.pch";
+				INFOPLIST_FILE = "WiiPair/WiiPair-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jason/Documents/Projects/WiiPair/WiiPair,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96B20B3D18A5C4C300F9481B /* Build configuration list for PBXProject "WiiPair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96B20B6C18A5C4C300F9481B /* Debug */,
+				96B20B6D18A5C4C300F9481B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96B20B6E18A5C4C300F9481B /* Build configuration list for PBXNativeTarget "WiiPair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96B20B6F18A5C4C300F9481B /* Debug */,
+				96B20B7018A5C4C300F9481B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96B20B3A18A5C4C300F9481B /* Project object */;
+}
