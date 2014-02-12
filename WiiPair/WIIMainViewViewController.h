@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WIIAppDelegate.h"
 
-@interface WIIMainViewViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate>
+@interface WIIMainViewViewController : UITableViewController<UITableViewDataSource, UITableViewDelegate, BTstackListener>
 
 @end

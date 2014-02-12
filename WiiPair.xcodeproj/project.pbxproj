@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9628EB4118A6FA2200B56E7D /* btstack_queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 96B20B8418A6640A00F9481B /* btstack_queue.c */; };
-		9628EB4318A6FA3500B56E7D /* WIIPairViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B20B7B18A662C000F9481B /* WIIPairViewController.m */; };
 		9628EB4618A708E500B56E7D /* WIIMainViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9628EB4518A708E500B56E7D /* WIIMainViewViewController.m */; };
+		9628EB4A18A9B2DC00B56E7D /* WIIPairDS4.m in Sources */ = {isa = PBXBuildFile; fileRef = 9628EB4918A9B2DC00B56E7D /* WIIPairDS4.m */; };
+		9628EB4E18A9B34800B56E7D /* WIIPairWiiMote.m in Sources */ = {isa = PBXBuildFile; fileRef = 9628EB4D18A9B34800B56E7D /* WIIPairWiiMote.m */; };
 		96B20B4618A5C4C300F9481B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B20B4518A5C4C300F9481B /* Foundation.framework */; };
 		96B20B4818A5C4C300F9481B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B20B4718A5C4C300F9481B /* CoreGraphics.framework */; };
 		96B20B4A18A5C4C300F9481B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B20B4918A5C4C300F9481B /* UIKit.framework */; };
@@ -23,6 +24,10 @@
 /* Begin PBXFileReference section */
 		9628EB4418A708E500B56E7D /* WIIMainViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIIMainViewViewController.h; sourceTree = "<group>"; };
 		9628EB4518A708E500B56E7D /* WIIMainViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIIMainViewViewController.m; sourceTree = "<group>"; };
+		9628EB4918A9B2DC00B56E7D /* WIIPairDS4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIIPairDS4.m; sourceTree = "<group>"; };
+		9628EB4B18A9B30C00B56E7D /* WIIPairDS4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIIPairDS4.h; sourceTree = "<group>"; };
+		9628EB4C18A9B34800B56E7D /* WIIPairWiiMote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIIPairWiiMote.h; sourceTree = "<group>"; };
+		9628EB4D18A9B34800B56E7D /* WIIPairWiiMote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIIPairWiiMote.m; sourceTree = "<group>"; };
 		96B20B4218A5C4C300F9481B /* WiiPair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiiPair.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B20B4518A5C4C300F9481B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96B20B4718A5C4C300F9481B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -35,8 +40,6 @@
 		96B20B5518A5C4C300F9481B /* WIIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WIIAppDelegate.m; sourceTree = "<group>"; };
 		96B20B7718A6609000F9481B /* WIILogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIILogViewController.h; sourceTree = "<group>"; };
 		96B20B7818A6609000F9481B /* WIILogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIILogViewController.m; sourceTree = "<group>"; };
-		96B20B7A18A662C000F9481B /* WIIPairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIIPairViewController.h; sourceTree = "<group>"; };
-		96B20B7B18A662C000F9481B /* WIIPairViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIIPairViewController.m; sourceTree = "<group>"; };
 		96B20B7E18A6640A00F9481B /* btstack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btstack.h; sourceTree = "<group>"; };
 		96B20B7F18A6640A00F9481B /* hci_cmds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hci_cmds.h; sourceTree = "<group>"; };
 		96B20B8018A6640A00F9481B /* linked_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linked_list.h; sourceTree = "<group>"; };
@@ -103,8 +106,10 @@
 				96B20B7818A6609000F9481B /* WIILogViewController.m */,
 				9628EB4418A708E500B56E7D /* WIIMainViewViewController.h */,
 				9628EB4518A708E500B56E7D /* WIIMainViewViewController.m */,
-				96B20B7A18A662C000F9481B /* WIIPairViewController.h */,
-				96B20B7B18A662C000F9481B /* WIIPairViewController.m */,
+				9628EB4B18A9B30C00B56E7D /* WIIPairDS4.h */,
+				9628EB4918A9B2DC00B56E7D /* WIIPairDS4.m */,
+				9628EB4C18A9B34800B56E7D /* WIIPairWiiMote.h */,
+				9628EB4D18A9B34800B56E7D /* WIIPairWiiMote.m */,
 				96B20B4C18A5C4C300F9481B /* Supporting Files */,
 			);
 			path = WiiPair;
@@ -198,10 +203,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9628EB4618A708E500B56E7D /* WIIMainViewViewController.m in Sources */,
+				9628EB4E18A9B34800B56E7D /* WIIPairWiiMote.m in Sources */,
 				9628EB4118A6FA2200B56E7D /* btstack_queue.c in Sources */,
+				9628EB4A18A9B2DC00B56E7D /* WIIPairDS4.m in Sources */,
 				96B20B5618A5C4C300F9481B /* WIIAppDelegate.m in Sources */,
 				96B20B7918A6609000F9481B /* WIILogViewController.m in Sources */,
-				9628EB4318A6FA3500B56E7D /* WIIPairViewController.m in Sources */,
 				96B20B5218A5C4C300F9481B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
