@@ -1,6 +1,6 @@
-Quick iOS app to pair a Wii Remote with BTstack.
+Quick iOS app to pair a Wii Remote or DualShock 4 with BTstack.
 
-After pairing you can press any button on the WiiMote and it will seek out a
+After pairing you can turn the controller on normally and it will seek out a
 connection with the iOS device.
 
 The BTstack flow for accepting such a connection is:
@@ -18,8 +18,34 @@ The BTstack flow for accepting such a connection is:
 --- Connection is now established.
 
 This exact flow of events can be used to establish connections to
-SixAxis and DualShock 3 pads as well.
+a Wii Remote, DualShock 3 and DualShock 4.
 
-By allowing the removal of Bluetooth inquiry code, and reuse between PS3 pads,
-using pairing can greatly simplify BTstack related input code.
+By allowing the removal of Bluetooth inquiry code, and reuse between pad types,
+using pairing can greatly simplify BTstack related gamepad code.
 
+----
+
+WiiMote Pairing Procedure:
+--> hci_create_connection
+<-- HCI_EVENT_CONNECTION_COMPLETE
+--> hci_authentication_requested
+<-- HCI_EVENT_PIN_CODE_REQUEST
+--> hci_pin_code_request_reply
+<-- HCI_AUTHENTICATION_COMPLETE
+--> l2cap_open_channel (Control and Interrupt)
+<-- L2CAP_CHANNEL_OPENED (Both channels)
+--- Pairing Complete
+
+DualShock 4 Pairing Procedure:
+--> hci_set_event_mask (Enable all)
+<-- HCI_COMMAND_COMPLETE
+--> hci_write_simple_pairing_mode (Enable)
+<-- HCI_COMMAND_COMPLETE
+--> hci_create_connection
+<-- HCI_CONNECTION_COMPLETE
+--> l2cap_open_channel (Control)
+<-- L2CAP_CHANNEL_OPENED (Control)
+--- Pairing Complete
+--- This procedure is wrong is some way; in the end the DualShock 4
+    will be paired but the controller will disconnect after the
+    first L2CAP channel is opened.

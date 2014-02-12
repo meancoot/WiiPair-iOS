@@ -113,6 +113,8 @@ static void BTstackPacketHandler(uint8_t packet_type, uint16_t channel, uint8_t 
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+    btpad_queue_btstack_set_power_mode(0);
+    bt_close();
 }
 
 @end

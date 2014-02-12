@@ -97,8 +97,6 @@ static unsigned pairingState = WIIWaiting;
 
 - (void)hciEventConnectionComplete:(uint8_t *)aData size:(uint16_t)aSize
 {
-    printf("HAHA\n");
-    
     if (pairingState != WIIConnecting || BD_ADDR_CMP(self.device.data.address, &aData[5]))
     {
         // Don't print this if state is paired: BTstack will call this once for each l2cap_channel_create command.
